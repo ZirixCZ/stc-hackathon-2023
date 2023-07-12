@@ -1,19 +1,20 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useRef } from "react";
-import { Button, Text, Input, Box, Flex } from "@chakra-ui/react";
+import { Button, Text, Input, Box, Flex, FormControl } from "@chakra-ui/react";
 import dateToDefaultValue from "@/utils/dateDefaultValue";
-import getPhrase from "@/utils/getPhrase";
 
 export default function Home() {
   const dateRef = useRef<HTMLInputElement | null>(null);
   const locationRef = useRef<HTMLInputElement | null>(null);
 
-  const handleSubmit = () => {
-    if (!dateRef.current) return;
+  const router = useRouter();
 
-    const date = dateRef.current.value;
-    const phrase = getPhrase(date);
+  const handleSubmit = () => {
+    if (!dateRef.current || !locationRef) return;
+
+    router.push(`/phrase?date=${dateRef.current.value}`);
   };
 
   return (
@@ -25,20 +26,25 @@ export default function Home() {
       direction="column"
       gap="1rem"
     >
-      <Box w="16rem">
-        <Text>Date of birth</Text>
-        <Input
-          name="to"
-          required
-          type="date"
-          ref={dateRef}
-          defaultValue={dateToDefaultValue(new Date(Date.now()))}
-        />
-      </Box>
-      <Box w="16rem">
-        <Text>Location of birth</Text>
-        <Input name="to" required type="text" ref={locationRef} />
-      </Box>
+      <FormControl w="16rem">
+        <Flex gap="0.5rem" direction="column">
+          <Box w="100%">
+            <Text>Date of birth</Text>
+            <Input
+              name="to"
+              required
+              type="date"
+              max={dateToDefaultValue(new Date(Date.now()))}
+              ref={dateRef}
+              defaultValue={dateToDefaultValue(new Date(Date.now()))}
+            />
+          </Box>
+          <Box w="100%">
+            <Text>Location of birth</Text>
+            <Input name="to" required type="text" ref={locationRef} />
+          </Box>
+        </Flex>
+      </FormControl>
 
       <Button onClick={handleSubmit}>Submit</Button>
     </Flex>
