@@ -32,7 +32,9 @@ export default function Home() {
           gap="0.75rem"
         >
           <Text fontSize="2rem">{phrase.sign}</Text>
-          <Text textAlign="justify">{phrase.message}</Text>
+          <Text textAlign="justify">
+            {phrase.message}
+          </Text>
         </Flex>
       )}
     </Flex>
