@@ -1,5 +1,8 @@
+"use client";
+
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
+import { Box } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Box w="100vw" h="100vh">
+            {children}
+          </Box>
+        </Providers>
       </body>
     </html>
   );
