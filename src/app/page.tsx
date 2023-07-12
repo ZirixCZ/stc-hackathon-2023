@@ -3,15 +3,17 @@
 import { useRef } from "react";
 import { Button, Text, Input, Box, Flex } from "@chakra-ui/react";
 import dateToDefaultValue from "@/utils/dateDefaultValue";
+import getPhrase from "@/utils/getPhrase";
 
 export default function Home() {
   const dateRef = useRef<HTMLInputElement | null>(null);
+  const locationRef = useRef<HTMLInputElement | null>(null);
 
   const handleSubmit = () => {
     if (!dateRef.current) return;
 
     const date = dateRef.current.value;
-    console.log(date);
+    const phrase = getPhrase(date);
   };
 
   return (
@@ -29,9 +31,15 @@ export default function Home() {
           name="to"
           required
           type="date"
+          ref={dateRef}
           defaultValue={dateToDefaultValue(new Date(Date.now()))}
         />
       </Box>
+      <Box w="16rem">
+        <Text>Location of birth</Text>
+        <Input name="to" required type="text" ref={locationRef} />
+      </Box>
+
       <Button onClick={handleSubmit}>Submit</Button>
     </Flex>
   );
