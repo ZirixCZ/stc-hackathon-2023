@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button, Text, Input, Box, Flex, FormControl } from "@chakra-ui/react";
 import dateToDefaultValue from "@/utils/dateDefaultValue";
 
+
 export default function Home() {
   const dateRef = useRef<HTMLInputElement | null>(null);
   const locationRef = useRef<HTMLInputElement | null>(null);
@@ -17,6 +18,23 @@ export default function Home() {
 
     router.push(`/phrase?date=${dateRef.current.value}`);
   };
+
+  const dateInRange = () => {
+    if (!dateRef.current) return;
+      
+    let date = Date.parse(dateRef.current.value);
+
+    // Check if the date is valid (not in future, not too far in the past)
+    if (date > Date.now()) {
+      date = Date.now();
+    }
+    else if (date < Date.parse("1900-1-1")) {
+      date = Date.parse("1900-1-1");
+    }
+
+    dateRef.current.value = dateToDefaultValue(new Date(date));
+  };
+  
 
   return (
     <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
@@ -42,7 +60,8 @@ export default function Home() {
                 type="date"
                 max={dateToDefaultValue(new Date(Date.now()))}
                 ref={dateRef}
-                defaultValue={dateToDefaultValue(new Date(Date.now()))}
+                defaultValue={dateToDefaultValue(new Date(Date.parse("2005-1-1")))}
+                onBlur={() => dateInRange()}
               />
             </Box>
           </Flex>
