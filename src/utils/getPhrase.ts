@@ -5,73 +5,73 @@ const phrases: Sign[] = [
     sign: "Aries",
     unicode: "♈︎",
     message:
-      "Just as Mars, your ruling planet, suggests bold actions, it's the ideal time to break free from your financial limitations, Aries. Our diverse range of investment products can guide you on this new path. Take advantage of our specialized advisors who can customize a portfolio based on your ambitious plans.",
+      "Today is a great day for Aries to take charge of their finances. Consider exploring new investment opportunities or starting a side hustle to boost your income. However, be cautious of impulsive purchases and take time to evaluate the potential risks and rewards before making any major financial decisions.",
   },
   {
     sign: "Taurus",
     unicode: "♉︎",
     message:
-      "With Venus as your guide, seek out security and prosperity, Taurus. As an Earth sign, you appreciate steady growth. Why not explore our long-term saving accounts or bonds? Our financial advisors can help you plant the seeds for your future growth.",
+      "Taurus individuals should focus on their long-term financial goals today. Consider reviewing your investment portfolio and make any necessary adjustments to ensure stability and growth. Additionally, look for opportunities to save or invest in assets that provide a sense of security.",
   },
   {
     sign: "Gemini",
     unicode: "♊︎",
     message:
-      "Quick-witted Gemini, Mercury fuels your mental agility. Apply this in your financial world by exploring our cutting-edge digital banking services. Connect with one of our digital banking experts to understand how technology can simplify your financial life.",
+      "Gemini, today is a day to diversify your financial ventures. Consider exploring different investment options, such as stocks, real estate, or even cryptocurrency. Stay well-informed about market trends and seize opportunities for growth and expansion.",
   },
   {
     sign: "Cancer",
     unicode: "♋︎",
     message:
-      "Safety and emotional security are core to your being, Cancer. Under the influence of the Moon, consider bolstering your safety net with our top-rated insurance policies. Let us protect what you hold dear, just as you do.",
+      "Cancerians should prioritize financial security today. Review your budget and identify areas where you can cut back on unnecessary expenses. Focus on saving and consider exploring passive income streams, such as rental properties or dividend-paying stocks.",
   },
   {
     sign: "Leo",
     unicode: "♌︎",
     message:
-      "As the Sun shines on you, Leo, use your natural charisma and leadership to influence your finances. Connect with our team to explore wealth management options that can put you in the financial spotlight, where you belong.",
+      "Leo, today is a favorable day to showcase your financial prowess. Consider networking with like-minded individuals who can offer valuable insights and opportunities. Leverage your natural leadership skills to explore new income-generating ventures or negotiate better financial terms.",
   },
   {
     sign: "Virgo",
     unicode: "♍︎",
     message:
-      "The meticulous and practical Virgo guided by Mercury can appreciate the attention to detail in our financial reports and assessments. Let our expert advisors help tailor a plan that suits your exact needs.",
+      "Virgos should put their analytical skills to work today. Take a close look at your financial statements, analyze your spending patterns, and identify areas where you can optimize your budget. Consider researching and learning about investment strategies that align with your practical nature.",
   },
   {
     sign: "Libra",
     unicode: "♎︎",
     message:
-      "Balance is your motto, Libra. Guided by Venus, you seek harmony in all aspects, including your finances. Speak to our financial advisors to balance your portfolio with the perfect mix of risk and return.",
+      "Libras should focus on achieving financial harmony today. Balance your desire for luxury and indulgence with responsible financial habits. Consider setting aside a portion of your income for savings or investments, while still allowing yourself some room for enjoyment and self-care.",
   },
   {
     sign: "Scorpio",
     unicode: "♏︎",
     message:
-      "As the sign ruled by Pluto and Mars, you appreciate transformation and power, Scorpio. Let's harness your intensity and focus it on building a robust financial strategy with our comprehensive banking services.",
+      "Today is a day for Scorpios to dive deep into their financial goals. Engage in thorough research and due diligence before making any major financial decisions. Consider seeking the guidance of a financial advisor who can help you navigate complex investment opportunities.",
   },
   {
     sign: "Sagittarius",
     unicode: "♐︎",
     message:
-      "Guided by Jupiter, you're all about expansion, Sagittarius. Your natural optimism should guide you towards exploring new investment opportunities. Consult our advisors today and let's expand your financial horizons together.",
+      "Sagittarians should embrace their adventurous nature and explore new financial horizons today. Consider diversifying your investment portfolio and exploring opportunities beyond traditional assets. However, be cautious and conduct thorough research before taking any significant financial risks.",
   },
   {
     sign: "Capricorn",
     unicode: "♑︎",
     message:
-      "With Saturn as your guide, Capricorn, your disciplined and practical approach to life extends to your finances. Consider our high-interest fixed deposits that reflect your long-term perspective and offer steady returns.",
+      "Capricorns should focus on building a solid foundation for their financial future today. Review your financial goals and make a plan to achieve them step by step. Consider setting up automatic savings or investment contributions to stay disciplined and on track.",
   },
   {
     sign: "Aquarius",
     unicode: "♒︎",
     message:
-      "Your innovative spirit and focus on the future, Aquarius, make you an ideal candidate for our latest digital financial solutions. Allow our team to guide you on the journey of futuristic finance that aligns with your Uranian tendencies.",
+      "Aquarians should focus on financial innovation and forward-thinking today. Explore alternative investment options or consider investing in socially responsible companies that align with your values. Stay open to new financial concepts and technologies that can offer growth and impact.",
   },
   {
     sign: "Pisces",
     unicode: "♓︎",
     message:
-      "As a Pisces, guided by Neptune, you value dreams and intuition. Let us help turn your financial dreams into reality with our wealth management services. Dive deep into the world of finance with us, and see your dreams come to life.",
+      "Today, Pisces individuals should trust their intuition when it comes to financial decisions. Pay attention to any gut feelings or intuitive nudges related to your finances. However, balance your dreams with practicality and seek guidance from financial professionals to ensure a well-rounded approach.",
   },
 ];
 
