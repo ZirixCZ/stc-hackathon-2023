@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Astrich
+#### The future of finance consulting is in the starts
+<img width="1898" alt="Screenshot 2023-07-13 at 14 20 28" src="https://github.com/ZirixCZ/stc-hackathon-2023/assets/49836430/f718e446-b5ac-4a8b-8634-048ddec75a0e">
+<img width="1897" alt="Screenshot 2023-07-13 at 14 20 36" src="https://github.com/ZirixCZ/stc-hackathon-2023/assets/49836430/e23a421a-5e7d-451d-92aa-435b6eb41fe0">
 
 ## Getting Started
 
