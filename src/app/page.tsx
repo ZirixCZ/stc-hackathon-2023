@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
       <Flex
-        w="60rem"
-        h="40rem"
+        w="70%"
+        h="90%"
         borderRadius="1rem"
         border="1px solid white"
         alignItems="center"
