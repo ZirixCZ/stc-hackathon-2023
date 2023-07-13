@@ -53,14 +53,14 @@ export default function Home() {
         gap="1rem"
         w={{ base: "20rem", lg: "30rem" }}
       >
-        <Text>{`It's lucky day to be a ${phrase?.sign}!`}</Text>
+        <Text>{`Planets say it clearly ${phrase?.sign}, today is a day of RELAXATION!`}</Text>
         <Button
           variant="outline"
           color="white"
           _hover={{ color: "accent.500", bg: "white" }}
         >
           <a
-            href="https://www.national-lottery.co.uk/"
+            href="https://www.sephora.cz/p/bubble-bath-shower-gel---pena-do-koupele-486618.html"
             target="_blank"
             rel="noopener noreferrer"
           >
