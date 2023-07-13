@@ -13,7 +13,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleSubmit = () => {
-    if (!dateRef.current || !locationRef) return;
+    if (!dateRef.current) return;
 
     router.push(`/phrase?date=${dateRef.current.value}`);
   };
@@ -27,7 +27,7 @@ export default function Home() {
         border="1px solid white"
         alignItems="center"
         justifyContent="center"
-        gap="1rem"
+        gap="1.75rem"
         direction="column"
       >
         <Image src="/candle.png" width="100" height="100" alt="logo image" />
@@ -36,6 +36,7 @@ export default function Home() {
             <Box w="100%">
               <Text>Date of birth</Text>
               <Input
+                color="white"
                 name="to"
                 required
                 type="date"

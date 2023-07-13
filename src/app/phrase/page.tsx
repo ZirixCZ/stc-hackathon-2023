@@ -8,6 +8,7 @@ import getPhrase from "@/utils/getPhrase";
 import { Sign } from "@/types/Sign";
 
 export default function Home() {
+  const router = useRouter();
   const [phrase, setPhrase] = useState<Sign | null>(null);
   const dateSearch = useSearchParams().get("date");
 
@@ -22,6 +23,7 @@ export default function Home() {
       w="100%"
       h="100%"
       direction="column"
+      gap="2rem"
     >
       {phrase && (
         <Flex
@@ -32,11 +34,17 @@ export default function Home() {
           gap="0.75rem"
         >
           <Text fontSize="2rem">{phrase.sign}</Text>
-          <Text textAlign="justify">
-            {phrase.message}
-          </Text>
+          <Text textAlign="justify">{phrase.message}</Text>
         </Flex>
       )}
+      <Button
+        variant="outline"
+        color="white"
+        _hover={{ color: "accent.500", bg: "white" }}
+        onClick={() => router.back()}
+      >
+        Back
+      </Button>
     </Flex>
   );
 }
