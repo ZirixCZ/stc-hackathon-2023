@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ChakraProvider theme={theme}>
-          <Box w="100vw" h="100vh" bg="accent.500" color="white">
+          <Box w="100vw" h="100vh" bg="accent.500" color="white" margin="0" overflow="hidden">
             {children}
           </Box>
         </ChakraProvider>
