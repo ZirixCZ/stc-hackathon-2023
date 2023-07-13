@@ -36,8 +36,8 @@ export default function Home() {
   return (
     <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
       <Flex
-        w="70%"
-        h="90%"
+        w={{ base: "70%", lg: "60%" }}
+        h={{ base: "90%", lg: "70%" }}
         borderRadius="1rem"
         border={{ base: "none", lg: "1px solid white" }}
         alignItems="center"
@@ -45,8 +45,13 @@ export default function Home() {
         gap="1.75rem"
         direction="column"
       >
-        <Text fontSize="2rem">Welcome to Astrich!</Text>
-        <Text textAlign="center">To see your advice from the stars,<br></br> tell us something about you.</Text>
+        <Text fontSize={{ base: "1.5rem", md: "2rem" }}>
+          Welcome to Astrich!
+        </Text>
+        <Text textAlign="center">
+          To see your advice from the stars,<br></br> tell us something about
+          you.
+        </Text>
         <Image src="/candle.png" width="100" height="100" alt="logo image" />
         <FormControl w="auto">
           <Flex gap="0.5rem" direction="column">
