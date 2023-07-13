@@ -45,6 +45,29 @@ export default function Home() {
       >
         Back
       </Button>
+      <Flex
+        pt="5rem"
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        gap="1rem"
+        w={{ base: "20rem", lg: "30rem" }}
+      >
+        <Text>{`It's lucky day to be a ${phrase?.sign}!`}</Text>
+        <Button
+          variant="outline"
+          color="white"
+          _hover={{ color: "accent.500", bg: "white" }}
+        >
+          <a
+            href="https://www.national-lottery.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lottery
+          </a>
+        </Button>
+      </Flex>
     </Flex>
   );
 }
