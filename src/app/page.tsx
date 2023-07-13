@@ -36,8 +36,8 @@ export default function Home() {
   return (
     <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
       <Flex
-        w="60rem"
-        h="40rem"
+        w="70%"
+        h="90%"
         borderRadius="1rem"
         border={{ base: "none", lg: "1px solid white" }}
         alignItems="center"
@@ -46,7 +46,7 @@ export default function Home() {
         direction="column"
       >
         <Image src="/candle.png" width="100" height="100" alt="logo image" />
-        <FormControl w="16rem">
+        <FormControl w="auto">
           <Flex gap="0.5rem" direction="column">
             <Box w="100%">
               <Text>Date of birth</Text>
