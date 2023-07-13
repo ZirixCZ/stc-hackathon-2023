@@ -6,6 +6,7 @@ import { Box, ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  useSystemColorMode: false,
   colors: {
     accent: {
       500: "#201c1c",
@@ -23,7 +24,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ChakraProvider theme={theme}>
-          <Box w="100vw" h="100vh" bg="accent.500" color="white" margin="0" overflow="hidden">
+          <Box
+            w="100vw"
+            h="100vh"
+            bg="accent.500"
+            color="white"
+            margin="0"
+            overflow="hidden"
+          >
             {children}
           </Box>
         </ChakraProvider>

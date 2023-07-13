@@ -30,7 +30,7 @@ export default function Home() {
           direction="column"
           justifyItems="center"
           alignItems="start"
-          w="30rem"
+          w={{ base: "20rem", lg: "30rem" }}
           gap="0.75rem"
         >
           <Text fontSize="2rem">{phrase.sign}</Text>
