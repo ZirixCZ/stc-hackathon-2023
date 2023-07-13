@@ -31,7 +31,7 @@ export default function Home() {
         direction="column"
       >
         <Image src="/candle.png" width="100" height="100" alt="logo image" />
-        <FormControl w="16rem">
+        <FormControl w="auto">
           <Flex gap="0.5rem" direction="column">
             <Box w="100%">
               <Text>Date of birth</Text>
