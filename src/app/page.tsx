@@ -45,6 +45,8 @@ export default function Home() {
         gap="1.75rem"
         direction="column"
       >
+        <Text fontSize="2rem">Welcome to Astrich!</Text>
+        <Text textAlign="center">To see your advice from the stars,<br></br> tell us something about you.</Text>
         <Image src="/candle.png" width="100" height="100" alt="logo image" />
         <FormControl w="16rem">
           <Flex gap="0.5rem" direction="column">
